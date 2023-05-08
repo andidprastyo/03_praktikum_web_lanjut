@@ -22,3 +22,7 @@ Route::get('/news',function(){return view('news');})->name('news');
 Route::get('/program',function(){return view('program');})->name('program');
 Route::get('/about',function(){return view('aboutUs');})->name('about');
 Route::get('/contact',function(){return view('contactUs');})->name('contact');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
