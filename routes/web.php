@@ -20,8 +20,8 @@ Route::get('/', function () {
 Route::get('/product',function(){return view('product');})->name('product');
 Route::get('/news',function(){return view('news');})->name('news');
 Route::get('/program',function(){return view('program');})->name('program');
-Route::get('/about',function(){return view('aboutUs');})->name('about');
-Route::get('/contact',function(){return view('contactUs');})->name('contact');
+Route::get('/about',function(){return view('aboutUs');})->name('about-us');
+Route::get('/contacts',function(){return view('contactUs');})->name('contact-us');
 
 Auth::routes();
 
